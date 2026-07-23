@@ -1,0 +1,344 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 6500;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 196, 110, 0.22), rgba(12, 7, 4, 0.78) 58%),
+    rgba(8, 5, 3, 0.62);
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  position: relative;
+  width: min(520px, calc(100vw - 32px));
+  overflow: hidden;
+  padding: 30px 28px 24px;
+  border: 2px solid #b8863f;
+  border-radius: 20px 20px 16px 16px;
+  background:
+    linear-gradient(180deg, rgba(252, 236, 204, 0.98), rgba(221, 186, 128, 0.98)),
+    url("/map/pergamin.jpg") center / cover;
+  color: #432916;
+  box-shadow:
+    inset 0 0 0 4px rgba(103, 62, 27, 0.1),
+    inset 0 1px 0 rgba(255, 250, 230, 0.9),
+    0 0 0 1px rgba(255, 214, 130, 0.35),
+    0 32px 80px rgba(11, 6, 3, 0.68),
+    0 0 48px rgba(255, 186, 96, 0.28);
+}
+
+.modal::before,
+.modal::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(111, 67, 29, 0.5), transparent);
+  pointer-events: none;
+}
+
+.modal::before {
+  top: 11px;
+}
+
+.modal::after {
+  bottom: 11px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(111, 67, 29, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 244, 216, 0.62);
+  color: #5d371d;
+  cursor: pointer;
+  font-family: var(--font-heading), serif;
+  font-size: 1.45rem;
+  line-height: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 250, 230, 0.65), 0 4px 12px rgba(68, 38, 16, 0.16);
+}
+
+.closeButton:hover {
+  background: rgba(255, 238, 190, 0.82);
+}
+
+.closeButton:focus-visible {
+  outline: 3px solid rgba(173, 113, 45, 0.28);
+  outline-offset: 3px;
+}
+
+.glowBurst {
+  position: absolute;
+  inset: -40%;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 210, 120, 0.42) 0%, transparent 42%),
+    radial-gradient(circle at 30% 40%, rgba(255, 236, 180, 0.2) 0%, transparent 35%);
+  animation: victoryGlowPulse 2.8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.sparkleField {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sparkleField i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #ffe8a8;
+  box-shadow: 0 0 10px rgba(255, 196, 110, 0.85);
+  animation: victorySparkle 2.4s ease-in-out infinite;
+}
+
+.sparkleField i:nth-child(1) {
+  top: 14%;
+  left: 12%;
+  animation-delay: 0s;
+}
+
+.sparkleField i:nth-child(2) {
+  top: 22%;
+  right: 16%;
+  animation-delay: 0.45s;
+}
+
+.sparkleField i:nth-child(3) {
+  bottom: 28%;
+  left: 18%;
+  animation-delay: 0.9s;
+}
+
+.sparkleField i:nth-child(4) {
+  bottom: 18%;
+  right: 14%;
+  animation-delay: 1.35s;
+}
+
+.sparkleField i:nth-child(5) {
+  top: 48%;
+  left: 8%;
+  animation-delay: 0.7s;
+}
+
+.sparkleField i:nth-child(6) {
+  top: 36%;
+  right: 9%;
+  animation-delay: 1.1s;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.seal {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  border: 2px solid rgba(208, 164, 92, 0.95);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255, 229, 170, 0.55), transparent 40%),
+    linear-gradient(180deg, rgba(149, 97, 45, 0.88), rgba(89, 51, 22, 0.92));
+  color: #f8e5bd;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 235, 192, 0.5),
+    0 8px 22px rgba(44, 25, 10, 0.45),
+    0 0 32px rgba(255, 196, 110, 0.42);
+}
+
+.seal svg {
+  width: 34px;
+  height: 34px;
+}
+
+.heading {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #98683b;
+}
+
+.title {
+  margin: 4px 0 0;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #3f2817;
+}
+
+.characterName {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #76502e;
+}
+
+.quote {
+  margin: 18px auto 0;
+  max-width: 34ch;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-heading), serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+  color: #3f2817;
+}
+
+.statsSection {
+  margin-top: 18px;
+}
+
+.statsSection + .statsSection {
+  margin-top: 14px;
+}
+
+.statsSectionLabel {
+  margin: 0 0 8px;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8b6037;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.statCard {
+  padding: 12px 10px;
+  border: 1px solid rgba(116, 73, 34, 0.28);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 247, 226, 0.72), rgba(236, 205, 150, 0.55)),
+    url("/map/pergamin.jpg") center / cover;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(255, 250, 230, 0.65);
+}
+
+.statCard span {
+  display: block;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b6037;
+}
+
+.statCard strong {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--font-heading), serif;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #3f2817;
+}
+
+.recordBadge {
+  margin: 0;
+  width: fit-content;
+  padding: 0.38rem 0.85rem;
+  border: 1px solid rgba(191, 145, 76, 0.65);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 229, 170, 0.55), rgba(200, 140, 60, 0.35));
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7a4e1d;
+  box-shadow: 0 0 18px rgba(255, 196, 110, 0.35);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.actions > * {
+  flex: 1;
+}
+
+@keyframes victoryGlowPulse {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes victorySparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  45% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 520px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glowBurst,
+  .sparkleField i {
+    animation: none;
+  }
+}

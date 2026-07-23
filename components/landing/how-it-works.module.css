@@ -1,0 +1,128 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.45) 12%,
+    black 28%,
+    black 72%,
+    rgba(0, 0, 0, 0.45) 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.45) 12%,
+    black 28%,
+    black 72%,
+    rgba(0, 0, 0, 0.45) 88%,
+    transparent 100%
+  );
+  background:
+    linear-gradient(90deg, transparent, rgba(198, 161, 93, 0.08), transparent),
+    repeating-linear-gradient(90deg, transparent 0 8rem, rgba(255, 255, 255, 0.012) 8rem 8.05rem);
+}
+
+.chapters {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(198, 161, 93, 0.32);
+  border-bottom: 1px solid rgba(198, 161, 93, 0.18);
+}
+
+.chapter {
+  position: relative;
+  min-height: 18rem;
+  padding: 2.5rem clamp(1.5rem, 3vw, 3rem) 2.75rem;
+}
+
+.chapter + .chapter {
+  border-left: 1px solid rgba(198, 161, 93, 0.18);
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cm-brass);
+}
+
+.mark span {
+  font-family: var(--font-display), serif;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: rgba(224, 193, 135, 0.72);
+}
+
+.mark svg {
+  opacity: 0.78;
+}
+
+.eyebrow {
+  margin-top: 2.25rem;
+  font-family: var(--font-heading), serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cm-brass-dark);
+}
+
+.chapter h3 {
+  margin-top: 0.55rem;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--cm-parchment-light);
+}
+
+.description {
+  max-width: 28ch;
+  margin-top: 1rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--cm-parchment-mid) 82%, transparent);
+}
+
+.chapter::after {
+  content: "";
+  position: absolute;
+  left: clamp(1.5rem, 3vw, 3rem);
+  bottom: 2rem;
+  width: 2.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cm-brass-dark), transparent);
+}
+
+@media (max-width: 767px) {
+  .chapters {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter {
+    min-height: 0;
+    padding-block: 2rem 2.5rem;
+  }
+
+  .chapter + .chapter {
+    border-top: 1px solid rgba(198, 161, 93, 0.18);
+    border-left: none;
+  }
+
+  .eyebrow {
+    margin-top: 1.5rem;
+  }
+}

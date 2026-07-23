@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="mg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b5ad9a"/>
+      <stop offset="22%" stop-color="#8a8170"/>
+      <stop offset="55%" stop-color="#3f3b33"/>
+      <stop offset="100%" stop-color="#12100d"/>
+    </linearGradient>
+    <radialGradient id="rivet" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f0d08a"/>
+      <stop offset="45%" stop-color="#9a642f"/>
+      <stop offset="100%" stop-color="#231006"/>
+    </radialGradient>
+  </defs>
+  <path
+    d="M0 8C0 3.6 3.6 0 8 0H36V10H12C10.3 10 10 10.3 10 12V36H0V8Z"
+    fill="url(#mg)"
+    stroke="rgba(255,230,170,0.28)"
+    stroke-width="0.6"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M3 8C3 5.7 4.7 4 7 4H33V8.5H13.5C12.1 8.5 13 9.4 13 11V33H3V8Z"
+    fill="none"
+    stroke="rgba(0,0,0,0.38)"
+    stroke-width="0.45"
+    stroke-linejoin="round"
+  />
+  <circle cx="6.5" cy="6.5" r="1.7" fill="url(#rivet)" stroke="#1a0f06" stroke-width="0.35"/>
+  <circle cx="6.5" cy="6.5" r="0.55" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="6.5" cy="24" r="1.45" fill="url(#rivet)" stroke="#1a0f06" stroke-width="0.35"/>
+  <circle cx="6.5" cy="24" r="0.45" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="24" cy="6.5" r="1.45" fill="url(#rivet)" stroke="#1a0f06" stroke-width="0.35"/>
+  <circle cx="24" cy="6.5" r="0.45" fill="rgba(255,255,255,0.3)"/>
+</svg>

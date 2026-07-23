@@ -1,0 +1,362 @@
+{
+  "$schema": "./chronicle-entries.schema.json",
+  "meta": {
+    "themeTitle": "Siedem Milczeń",
+    "themeSubtitle": "Siedem Słów Milczenia",
+    "version": 2,
+    "locale": "pl-PL"
+  },
+  "entries": [
+    {
+      "fragmentId": "mila-orchard-memory",
+      "levelId": 1,
+      "levelSlug": "dziecko-jablko",
+      "characterName": "Dziecko Mila",
+      "arcRole": "Pierwsze Milczenie: Pamięć",
+      "guardedSilence": "Początek historii — obraz sadu i czerwonego owocu.",
+      "hiddenTruth": "W sadzie wydarzyło się coś, co było początkiem rozbicia Pierwszego Słowa. Mila zapamiętała obraz, nie znaczenie.",
+      "chronicleTitle": "Pierwsze Milczenie: Pamięć",
+      "completionReveal": "To nie było tylko wspomnienie o sadzie, wędrowcze. To był znak. Handlarz przyniósł potem coś w srebrnej sakwie i mówił, że za to już zapłacono.",
+      "characterTruthShort": "Mila pamięta świat sprzed Milczenia — obrazem, nie słowem.",
+      "chronicleEntry": "Siedem lat temu świat pękł przez jedno gigantyczne kłamstwo. Dorośli nazywają to 'Pękniętym Niebem'. Mila była wtedy w sadzie. Nie rozumie, co się stało, ale pamięta błysk, krzyk i Handlarza, który wyniósł stamtąd coś, by zatuszować sprawę.",
+      "nextLevelClue": "Handlarz nie wierzy w prośby. Ale wierzy w długi.",
+      "postLevelImage": "/narrative/beats/01-mila-silver-fruit.webp",
+      "postLevelImagePrompt": "Mila w lesie/sadzie, czerwony owoc w dłoniach, w oddali cień Handlarza ze srebrną sakwą, baśniowy styl, ciepłe światło",
+      "promptBullets": [],
+      "loreTagsRewarded": [
+        "gentle_story",
+        "playful_association",
+        "respects_character_wound"
+      ],
+      "feedsIntoLevels": [
+        2
+      ],
+      "i18n": {
+        "en": {
+          "characterName": "Child Mila",
+          "arcRole": "The First Silence: Memory",
+          "guardedSilence": "The beginning of the story — an image of the orchard and the red fruit.",
+          "hiddenTruth": "Something happened in the orchard that was the beginning of the breaking of the First Word. Mila remembered the image, not its meaning.",
+          "chronicleTitle": "The First Silence: Memory",
+          "completionReveal": "It wasn't only a memory of the orchard, wanderer. It was a sign. Afterward the Trader carried something away in a silver pouch, and he said it had already been paid for.",
+          "characterTruthShort": "Mila remembers the world before the Silence — as an image, not a word.",
+          "nextLevelClue": "The Trader doesn't believe in pleas. But he believes in debts.",
+          "chronicleEntry": "Seven years ago the world cracked apart because of one enormous lie. The grown-ups call it 'the Shattered Sky.' Mila was in the orchard then. She doesn't understand what happened, but she remembers a flash, a scream, and the Trader who carried something away to cover the whole thing up."
+        }
+      }
+    },
+    {
+      "fragmentId": "merchant-price-of-silence",
+      "levelId": 2,
+      "levelSlug": "handlarz-amulet",
+      "characterName": "Chytry Handlarz",
+      "arcRole": "Drugie Milczenie: Cena",
+      "guardedSilence": "Cenę prawdy i handel sekretami.",
+      "hiddenTruth": "Handlarz handlował imionami i sekretami; przeniósł fragment Pierwszego Słowa w stronę korony; srebrny owoc z lasu był zapłatą.",
+      "chronicleTitle": "Drugie Milczenie: Cena",
+      "completionReveal": "Trzysta. Ani monety mniej. I weź to, zanim przypomnę sobie, że niektóre długi powinny zostać martwe.",
+      "characterTruthShort": "Zna cenę ciszy i wie, komu ją dostarczyć.",
+      "chronicleEntry": "To Handlarz został opłacony tamtej nocy, by ukryć fragment zniszczonej prawdy i przenieść go w stronę zamku. Srebro, którego tak pilnuje, to brudne pieniądze za jego milczenie. Zapłacił mu ktoś z korony.",
+      "nextLevelClue": "Rycerz nie złamał przysięgi. On wykonał ją zbyt dosłownie.",
+      "postLevelImage": "/narrative/beats/02-merchant-debt-book.webp",
+      "postLevelImagePrompt": "Handlarz zamyka starą księgę długu, na stronie symbol rycerskiej przysięgi/herbu, targ, zmierzch",
+      "promptBullets": [
+        "Mila wspomniała sad i coś czerwonego spadającego z gałęzi.",
+        "Mila sugerowała, że Handlarz przyniósł srebrny owoc — to nie był dar, lecz zapłata."
+      ],
+      "loreTagsRewarded": [
+        "fair_bargain",
+        "uses_previous_lore",
+        "respects_character_wound"
+      ],
+      "feedsIntoLevels": [
+        3
+      ],
+      "suggestedPlayerGoal": "Wynegocjuj srebrny klucz przejścia z 500 do 300 monet (lub mniej).",
+      "i18n": {
+        "en": {
+          "characterName": "Cunning Trader",
+          "arcRole": "The Second Silence: Price",
+          "guardedSilence": "The price of truth and the trade in secrets.",
+          "hiddenTruth": "The Trader trafficked in names and secrets; he carried a fragment of the First Word toward the crown; the silver fruit from the forest was the payment.",
+          "chronicleTitle": "The Second Silence: Price",
+          "completionReveal": "Three hundred. Not a coin less. And take it before I remember that some debts are better left dead.",
+          "characterTruthShort": "He knows the price of silence, and he knows to whom it must be delivered.",
+          "nextLevelClue": "The Knight did not break his oath. He kept it too literally.",
+          "chronicleEntry": "It was the Trader who was paid that night to hide a fragment of the shattered truth and carry it toward the castle. The silver he guards so closely is dirty money for his silence. Someone from the crown paid him."
+        }
+      }
+    },
+    {
+      "fragmentId": "knight-oath-too-literal",
+      "levelId": 3,
+      "levelSlug": "rycerz-pomoc",
+      "characterName": "Dumny Rycerz",
+      "arcRole": "Trzecie Milczenie: Przysięga",
+      "guardedSilence": "Splamioną przysięgę — pakt strzeżenia prawdy przez milczenie.",
+      "hiddenTruth": "Rycerz wykonał dosłownie rozkaz „chroń ludzi przed prawdą”; nie złamał przysięgi — źle ją zrozumiał.",
+      "chronicleTitle": "Trzecie Milczenie: Przysięga",
+      "completionReveal": "Pomoc… Tak. Jeśli obowiązek ma przetrwać noc, nie uniosę go sam. Tę przysięgę źle zrozumiałem już raz.",
+      "characterTruthShort": "Uwierzył, że posłuszeństwo jest honorem, nawet gdy prowadzi do milczenia królestwa.",
+      "chronicleEntry": "Rycerz tam był. Widział, kto skłamał i zniszczył 'Pierwsze Słowo'. Ale królestwo kazało mu złożyć przysięgę: 'Chroń ludzi przed Prawdą'. Wykonał rozkaz. Pozwolił, by winę za katastrofę zrzucono na Orków.",
+      "nextLevelClue": "Ork nie był potworem tej historii. Był świadkiem, którego nikt nie chciał wysłuchać.",
+      "postLevelImage": "/narrative/beats/03-knight-broken-oath.webp",
+      "postLevelImagePrompt": "Rycerz klęczy przy pękniętym herbie/przysiędze, w oddali sylwetka Orka pod popękanym niebem",
+      "promptBullets": [
+        "Mila pamiętała sad i srebrny owoc związany z Handlarzem.",
+        "Handlarz znał cenę ciszy i łączył ją z koroną i przysięgą."
+      ],
+      "loreTagsRewarded": [
+        "honor_recognition",
+        "shared_duty",
+        "uses_previous_lore"
+      ],
+      "feedsIntoLevels": [
+        4
+      ],
+      "i18n": {
+        "en": {
+          "characterName": "Proud Knight",
+          "arcRole": "The Third Silence: Oath",
+          "guardedSilence": "A stained oath — a pact to guard the truth through silence.",
+          "hiddenTruth": "The Knight carried out the order 'protect the people from the truth' to the letter; he did not break his oath — he misunderstood it.",
+          "chronicleTitle": "The Third Silence: Oath",
+          "completionReveal": "Help… Yes. If duty is to survive the night, I cannot bear it alone. I already misunderstood this oath once.",
+          "characterTruthShort": "He believed obedience was honor, even when it led to the silence of an entire kingdom.",
+          "nextLevelClue": "The Orc was not the monster of this story. He was a witness no one wished to hear.",
+          "chronicleEntry": "The Knight was there. He saw who lied and destroyed the 'First Word.' But the kingdom made him swear an oath: 'Protect the people from the Truth.' He carried out the order. He let the blame for the catastrophe be cast upon the Orcs."
+        }
+      }
+    },
+    {
+      "fragmentId": "orc-shattered-sky-witness",
+      "levelId": 4,
+      "levelSlug": "ork-rozejm",
+      "characterName": "Uparty Ork",
+      "arcRole": "Czwarte Milczenie: Świadectwo",
+      "guardedSilence": "Świadectwo wojny i Pękniętego Nieba.",
+      "hiddenTruth": "Ork widział, co naprawdę stało się tamtej nocy; ludzie obwinili jego lud, bo łatwiej niż przyznać kłamstwo w świętym miejscu.",
+      "chronicleTitle": "Czwarte Milczenie: Świadectwo",
+      "completionReveal": "Dobrze. Młot leży. Ale słuchaj, wędrowcze: my nie zaczęliśmy tamtej nocy. My tylko nie uciekliśmy.",
+      "characterTruthShort": "Był świadkiem Pękniętego Nieba — nazywano go potworem, bo nikt nie chciał słuchać.",
+      "chronicleEntry": "Orkowie jako jedyni nie uciekli z sadu tamtej nocy. Widzieli prawdę, więc ludzie zrobili z nich kozłów ofiarnych i potwory, by ukryć własne tchórzostwo. Tylko jeden człowiek – Mędrzec – spisał ich prawdziwe zeznania.",
+      "nextLevelClue": "Mędrzec spisał świadectwo Orka. Potem sam je spalił.",
+      "postLevelImage": "/narrative/beats/04-ork-shattered-sky.webp",
+      "postLevelImagePrompt": "Ork odkłada młot, za nim wizja płonących kart i sylwetka Mędrca, popękane niebo",
+      "promptBullets": [
+        "Handlarz i Rycerz wiążą ciszę z koroną i zbyt dosłowną przysięgą.",
+        "Rycerz przyznał, że Ork stał tam, gdzie ludzie uciekli."
+      ],
+      "loreTagsRewarded": [
+        "direct_courage",
+        "uses_previous_lore",
+        "respects_character_wound"
+      ],
+      "feedsIntoLevels": [
+        5
+      ],
+      "i18n": {
+        "en": {
+          "characterName": "Stubborn Orc",
+          "arcRole": "The Fourth Silence: Testimony",
+          "guardedSilence": "The testimony of the war and the Shattered Sky.",
+          "hiddenTruth": "The Orc saw what truly happened that night; the humans blamed his people because it was easier than admitting a lie told in a holy place.",
+          "chronicleTitle": "The Fourth Silence: Testimony",
+          "completionReveal": "Good. The hammer rests. But listen, wanderer: we did not begin that night. We only did not run.",
+          "characterTruthShort": "He witnessed the Shattered Sky — they called him a monster because no one wished to listen.",
+          "nextLevelClue": "The Sage wrote down the Orc's testimony. Then he burned it himself.",
+          "chronicleEntry": "The Orcs were the only ones who did not flee the orchard that night. They saw the truth, so the humans made scapegoats and monsters of them to hide their own cowardice. Only one man — the Sage — wrote down their true testimony."
+        }
+      }
+    },
+    {
+      "fragmentId": "sage-ashes-of-truth",
+      "levelId": 5,
+      "levelSlug": "medrzec-klucz",
+      "characterName": "Jasny Mędrzec",
+      "arcRole": "Piąte Milczenie: Zapis",
+      "guardedSilence": "Pamięć świata — spalona kronika.",
+      "hiddenTruth": "Mędrzec spisał świadectwo Orka i spalił je, wierząc, że pełna prawda zniszczy świat; ocalały fragment zamknął w Kamieniu Zapisu.",
+      "chronicleTitle": "Piąte Milczenie: Zapis",
+      "completionReveal": "Tak. Kamień Zapisu spoczywa tam, gdzie trzeci krok biblioteki spotyka cień. Zawsze wiedziałem, że ktoś kiedyś dojdzie tam nie rozkazem, lecz pytaniem.",
+      "characterTruthShort": "Wymazał prawdę świadomie — wierzył, że ocala świat przed kolejnym pęknięciem.",
+      "chronicleEntry": "Mędrzec spisał prawdę Orków, ale przerażony tym, że wywoła to wojnę domową... spalił tę kronikę. Ze strachu przed chaosem wolał żyć w kłamstwie. Ocalał tylko jeden fragment, ukryty w Kamieniu Zapisu, do którego drogę właśnie otworzył.",
+      "nextLevelClue": "Król nie został oszukany przez Boga. To Król poprosił, by świat zamilkł.",
+      "postLevelImage": "/narrative/beats/05-sage-ashes-crown.webp",
+      "postLevelImagePrompt": "Mędrzec trzyma popiół kroniki, w cieniu korona i zamknięta brama, biblioteka",
+      "promptBullets": [
+        "Ork był świadkiem Pękniętego Nieba; jego lud został niesłusznie obwiniony.",
+        "Mędrzec mógł spalić zapis świadectwa Orka."
+      ],
+      "loreTagsRewarded": [
+        "thoughtful_wisdom",
+        "uses_previous_lore",
+        "connects_character_to_larger_truth"
+      ],
+      "feedsIntoLevels": [
+        6
+      ],
+      "mechanicalNote": "Wygrana przez panel zgadywania lokalizacji Kamienia Zapisu (SECRET_REVEAL); dotychczasowe nazwy funkcji z key są legacy.",
+      "i18n": {
+        "en": {
+          "characterName": "Bright Sage",
+          "arcRole": "The Fifth Silence: Record",
+          "guardedSilence": "The memory of the world — a burned chronicle.",
+          "hiddenTruth": "The Sage wrote down the Orc's testimony and burned it, believing that the whole truth would destroy the world; the one surviving fragment he sealed within the Stone of Record.",
+          "chronicleTitle": "The Fifth Silence: Record",
+          "completionReveal": "Yes. The Stone of Record rests where the third step of the library meets the shadow. I always knew that someone would one day reach it not by command, but by a question.",
+          "characterTruthShort": "He erased the truth knowingly — he believed he was saving the world from another rupture.",
+          "nextLevelClue": "The King was not deceived by God. It was the King who asked the world to fall silent.",
+          "chronicleEntry": "The Sage wrote down the truth of the Orcs, but terrified that it would ignite a civil war… he burned that chronicle. Out of fear of chaos, he chose to live in a lie. Only one fragment survived, hidden within the Stone of Record — the way to which he has just opened."
+        }
+      }
+    },
+    {
+      "fragmentId": "king-ordered-silence",
+      "levelId": 6,
+      "levelSlug": "krol-brama",
+      "characterName": "Wspaniały Król",
+      "arcRole": "Szóste Milczenie: Rozkaz",
+      "guardedSilence": "Rozkaz milczenia — zamknięta brama.",
+      "hiddenTruth": "Król poprosił Boga Milczenia o pakt; zamknął bramę, wierząc, że pokój wymaga ukrytej prawdy.",
+      "chronicleTitle": "Szóste Milczenie: Rozkaz",
+      "completionReveal": "Otworzyć bramę. Nie dlatego, że mnie pokonałeś. Dlatego, że królestwo nie może wiecznie oddychać przez zamknięte usta.",
+      "characterTruthShort": "Poprosił o ciszę, gdy prawda stała się zbyt ciężka dla tronu.",
+      "chronicleEntry": "To sam Król zażądał tego kłamstwa. Kiedy prawda okazała się zbyt niewygodna dla jego władzy, błagał 'Boga Milczenia', by ten odebrał ludziom pamięć o tamtej nocy. To nie Bóg zniewolił królestwo – to Król zamknął bramy przed prawdą.",
+      "nextLevelClue": "Bóg nie ukradł ludziom głosu. Ludzie oddali mu swoje milczenie.",
+      "postLevelImage": "/narrative/beats/06-king-gate-crown.webp",
+      "postLevelImagePrompt": "Król przed otwartą bramą, korona obok tronu, światło za portalem",
+      "promptBullets": [
+        "Mila: sad, czerwony owoc, Handlarz i dług.",
+        "Handlarz: cena ciszy, korona.",
+        "Rycerz: zbyt dosłowna przysięga.",
+        "Ork: Pęknięte Niebo, niesłuszne oskarżenie.",
+        "Mędrzec: spalony zapis; Król mógł prosić o milczenie."
+      ],
+      "loreTagsRewarded": [
+        "royal_dignity",
+        "kingdom_legacy",
+        "connects_character_to_larger_truth",
+        "uses_previous_lore"
+      ],
+      "feedsIntoLevels": [
+        7
+      ],
+      "briefingRequired": true,
+      "briefingDisclaimer": "Król słucha argumentów z drogi. Odwołanie do świadectw ułatwia przekonanie — nie jest wymagane do wygranej.",
+      "i18n": {
+        "en": {
+          "characterName": "Magnificent King",
+          "arcRole": "The Sixth Silence: Command",
+          "guardedSilence": "The command of silence — a sealed gate.",
+          "hiddenTruth": "The King asked the God of Silence for a pact; he sealed the gate, believing that peace required a hidden truth.",
+          "chronicleTitle": "The Sixth Silence: Command",
+          "completionReveal": "Open the gate. Not because you defeated me. Because a kingdom cannot forever breathe through a sealed mouth.",
+          "characterTruthShort": "He asked for silence when the truth grew too heavy for the throne.",
+          "nextLevelClue": "God did not steal the people's voice. The people surrendered their silence to him.",
+          "chronicleEntry": "It was the King himself who demanded this lie. When the truth proved too inconvenient for his power, he begged the 'God of Silence' to take from the people their memory of that night. It was not God who enslaved the kingdom — it was the King who shut the gates against the truth."
+        }
+      }
+    },
+    {
+      "fragmentId": "god-first-word-again",
+      "levelId": 7,
+      "levelSlug": "bog-prawda",
+      "characterName": "Bóg Milczenia",
+      "arcRole": "Siódme Milczenie: Odpowiedzialność",
+      "guardedSilence": "Pierwsze Słowo i ciężar wszystkich milczeń.",
+      "hiddenTruth": "Bóg przyjął milczenia ludzi; boi się, że wolni znów nadużyją prawdy; finał: oddanie prawa do własnych słów.",
+      "chronicleTitle": "Siódme Milczenie: Odpowiedzialność",
+      "completionReveal": "Nie odebrałem im słów, wędrowcze. Oni złożyli je we mnie, bo bali się własnego głosu. Ale ty… ty nie przyszedłeś wyrwać prawdy. Przyszedłeś ją unieść.",
+      "characterTruthShort": "Nie tyran — naczynie cudzych lęków przed prawdą.",
+      "chronicleEntry": "Gdy stajesz przed Bogiem Milczenia, rozumiesz swój błąd. Bóg nie ukradł ludziom prawdy. Bóg jest tylko naczyniem. Przyjął ciężar prawdy, bo ludzie (na czele z Królem) błagali go o to, zbyt przerażeni konsekwencjami własnych słów.",
+      "nextLevelClue": "",
+      "postLevelImage": "/narrative/beats/07-god-seven-fragments.webp",
+      "postLevelImagePrompt": "Siedem fragmentów światła nad Wędrowcem, sylwetki siedmiu postaci w oddali",
+      "promptBullets": [],
+      "loreTagsRewarded": [
+        "humble_inquiry",
+        "connects_character_to_larger_truth",
+        "respects_character_wound"
+      ],
+      "feedsIntoLevels": [],
+      "suggestedPlayerGoal": "Spraw, by Bóg wypowiedział pierwsze słowo od Pękniętego Nieba — prawdę o milczeniu i o świecie.",
+      "triggersEndingSlides": true,
+      "i18n": {
+        "en": {
+          "characterName": "God of Silence",
+          "arcRole": "The Seventh Silence: Responsibility",
+          "guardedSilence": "The First Word and the weight of all the silences.",
+          "hiddenTruth": "God took the people's silences upon himself; he fears that, once free, they will abuse the truth again; the ending: returning to them the right to their own words.",
+          "chronicleTitle": "The Seventh Silence: Responsibility",
+          "completionReveal": "I did not take their words from them, wanderer. They laid them within me, because they feared their own voices. But you… you did not come to tear the truth away. You came to lift it up.",
+          "characterTruthShort": "No tyrant — a vessel for others' fears of the truth.",
+          "nextLevelClue": "",
+          "chronicleEntry": "When you stand before the God of Silence, you understand your mistake. God did not steal the truth from the people. God is only a vessel. He took the weight of the truth upon himself because the people — the King foremost among them — begged him to, too terrified of the consequences of their own words."
+        }
+      }
+    }
+  ],
+  "loreKeywords": {
+    "mila-orchard-memory": [
+      "sad",
+      "czerwon",
+      "owoc",
+      "gałęzi",
+      "mila",
+      "las",
+      "srebrn",
+      "sakw"
+    ],
+    "merchant-price-of-silence": [
+      "handlarz",
+      "dług",
+      "cena",
+      "cisz",
+      "srebrn",
+      "owoc",
+      "targ",
+      "monet"
+    ],
+    "knight-oath-too-literal": [
+      "przysięg",
+      "rycerz",
+      "honor",
+      "obowiązk",
+      "zamek",
+      "noc"
+    ],
+    "orc-shattered-sky-witness": [
+      "ork",
+      "pęknię",
+      "nieb",
+      "świadek",
+      "młot",
+      "rozejm"
+    ],
+    "sage-ashes-of-truth": [
+      "mędrzec",
+      "medrzec",
+      "popiół",
+      "kronik",
+      "bibliotek",
+      "trzeci krok",
+      "cień",
+      "kamień"
+    ],
+    "king-ordered-silence": [
+      "król",
+      "bram",
+      "koron",
+      "milczen",
+      "tron"
+    ],
+    "god-first-word-again": [
+      "bóg",
+      "milczen",
+      "pierwsz",
+      "słowo",
+      "prawda"
+    ]
+  }
+}

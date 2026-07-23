@@ -1,0 +1,87 @@
+button {
+  transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease;
+}
+
+button:active:not(:disabled) {
+  transform: translateY(3px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    margin: 0;
+    min-height: 100%;
+    background: #140c07;
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    @apply text-foreground;
+    background: #140c07;
+  }
+  html {
+    @apply font-sans;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading), serif;
+  }
+
+  .font-display {
+    font-family: var(--font-display), serif;
+  }
+
+  /* --- Global Custom Scrollbar Styles --- */
+
+  /* Firefox Scrollbar Styling */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+  }
+
+  *:not(html):hover,
+  *.is-scrolling {
+    scrollbar-color: rgba(107, 68, 35, 0.35) transparent;
+  }
+
+  html.is-scrolling {
+    scrollbar-color: rgba(107, 68, 35, 0.35) transparent;
+  }
+
+  /* WebKit (Chrome, Safari, Edge) Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: background-color 0.25s ease;
+  }
+
+  /* Show scrollbar thumb on hover or when element is actively scrolling (excluding root html hover) */
+  *:not(html):hover::-webkit-scrollbar-thumb,
+  *.is-scrolling::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 68, 35, 0.35);
+  }
+
+  /* For root html scrollbar, only show when actively scrolling */
+  html.is-scrolling::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 68, 35, 0.35);
+  }
+
+  /* Accentuate scrollbar thumb when hovering directly over it */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(107, 68, 35, 0.65) !important;
+  }
+}

@@ -1,0 +1,207 @@
+.screen {
+  --auth-wood-texture: url("/textures/dark_wood_diff_4k.jpg");
+  position: relative;
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding:
+    max(1.5rem, env(safe-area-inset-top))
+    1.25rem
+    max(1.5rem, env(safe-area-inset-bottom));
+  background:
+    radial-gradient(ellipse 72% 58% at 50% 18%, rgba(255, 186, 96, 0.12), transparent 58%),
+    radial-gradient(ellipse 88% 72% at 50% 100%, rgba(79, 137, 125, 0.1), transparent 52%),
+    linear-gradient(180deg, #1a100a 0%, #140c07 42%, #0a0604 100%);
+  color: #f1dfbd;
+}
+
+.backdropGlow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 196, 110, 0.14) 0%, transparent 28%),
+    radial-gradient(circle at 82% 72%, rgba(120, 180, 140, 0.08) 0%, transparent 32%);
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 28rem);
+  padding: 1.75rem 1.65rem 1.5rem;
+  border: 2px solid #916232;
+  border-radius: 1.15rem 1.15rem 0.95rem 0.95rem;
+  background:
+    linear-gradient(180deg, rgba(252, 236, 204, 0.98), rgba(221, 186, 128, 0.98)),
+    url("/map/pergamin.jpg") center / cover;
+  color: #432916;
+  box-shadow:
+    inset 0 0 0 4px rgba(103, 62, 27, 0.1),
+    inset 0 1px 0 rgba(255, 250, 230, 0.88),
+    0 28px 70px rgba(11, 6, 3, 0.62),
+    0 0 42px rgba(255, 186, 96, 0.16);
+}
+
+.panel::before,
+.panel::after {
+  content: "";
+  position: absolute;
+  left: 1.15rem;
+  right: 1.15rem;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(111, 67, 29, 0.48), transparent);
+  pointer-events: none;
+}
+
+.panel::before {
+  top: 0.65rem;
+}
+
+.panel::after {
+  bottom: 0.65rem;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #98683b;
+}
+
+.title {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(1.45rem, 4vw, 1.85rem);
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #3f2817;
+}
+
+.subtitle {
+  margin: 0.55rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #76502e;
+}
+
+.tabs {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+}
+
+.tab {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(116, 73, 34, 0.34);
+  border-radius: 999px;
+  background: rgba(255, 247, 226, 0.34);
+  color: #704820;
+  font-family: var(--font-heading), serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.tabActive {
+  border-color: #7d4c24;
+  background:
+    linear-gradient(180deg, rgba(138, 84, 40, 0.64), rgba(77, 42, 20, 0.75)),
+    var(--auth-wood-texture) center / 125px auto;
+  color: #f4ddb4;
+  box-shadow: 0 0 14px rgba(191, 125, 49, 0.24);
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.15rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b6037;
+}
+
+.input {
+  width: 100%;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid rgba(116, 73, 34, 0.32);
+  border-radius: 0.65rem;
+  background:
+    linear-gradient(180deg, rgba(255, 251, 235, 0.92), rgba(247, 228, 190, 0.88)),
+    url("/map/pergamin.jpg") center / 130% auto;
+  color: #3f2817;
+  font-family: var(--font-body), serif;
+  font-size: 0.92rem;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 250, 230, 0.75);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.input::placeholder {
+  color: rgba(118, 80, 46, 0.62);
+}
+
+.input:focus-visible {
+  border-color: rgba(158, 108, 50, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 250, 230, 0.75),
+    0 0 0 3px rgba(255, 196, 110, 0.22);
+}
+
+.status {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.statusError {
+  color: #8f2f2f;
+}
+
+.statusSuccess {
+  color: #3f6a3a;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #805c3b;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+  text-align: center;
+}

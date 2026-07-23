@@ -1,0 +1,277 @@
+{
+  "intro-01": {
+    "audio": "/audio/narrator/intro/01-seven-silences.mp3",
+    "text": "Przy drodze odnajdujesz Kronikę, która nie zna twojego imienia. Wszystkie jej strony są puste, poza jednym zdaniem. Siedmioro oddało światu swoje milczenie. Wysłuchaj pierwszego głosu, a droga zapisze następny.",
+    "durationMs": 15360,
+    "cues": [
+      {
+        "text": "Przy drodze odnajdujesz Kronikę, która nie zna twojego imienia.",
+        "startMs": 133,
+        "endMs": 3800
+      },
+      {
+        "text": "Wszystkie jej strony są puste, poza jednym zdaniem.",
+        "startMs": 3940,
+        "endMs": 7640
+      },
+      {
+        "text": "Siedmioro oddało światu swoje milczenie.",
+        "startMs": 8310,
+        "endMs": 10640
+      },
+      {
+        "text": "Wysłuchaj pierwszego głosu, a droga zapisze następny.",
+        "startMs": 11040,
+        "endMs": 15360
+      }
+    ]
+  },
+  "intro-02": {
+    "audio": "/audio/narrator/intro/02-nameless-wanderer.mp3",
+    "text": "Ciebie nie ma w Kronice świata. Dlatego możesz usłyszeć tych, których ona przemilczała. Nie masz miecza ani tytułu. Masz pytania — i drogę, na końcu której być może odzyskasz swoje imię.",
+    "durationMs": 14320,
+    "cues": [
+      {
+        "text": "Ciebie nie ma w Kronice świata.",
+        "startMs": 150,
+        "endMs": 1920
+      },
+      {
+        "text": "Dlatego możesz usłyszeć tych, których ona przemilczała.",
+        "startMs": 2280,
+        "endMs": 6240
+      },
+      {
+        "text": "Nie masz miecza ani tytułu.",
+        "startMs": 6340,
+        "endMs": 8400
+      },
+      {
+        "text": "Masz pytania — i drogę, na końcu której być może odzyskasz swoje imię.",
+        "startMs": 8600,
+        "endMs": 14320
+      }
+    ]
+  },
+  "intro-03": {
+    "audio": "/audio/narrator/intro/03-every-silence-different.mp3",
+    "text": "Każde milczenie ma inny głos. Mila boi się pamięci. Handlarz zna cenę sekretów, a Rycerz ukrywa się za przysięgą. Słuchaj uważnie, bo słowo, które otworzy jedne drzwi, może zamknąć następne.",
+    "durationMs": 18480,
+    "cues": [
+      {
+        "text": "Każde milczenie ma inny głos.",
+        "startMs": 213,
+        "endMs": 2800
+      },
+      {
+        "text": "Mila boi się pamięci.",
+        "startMs": 3080,
+        "endMs": 5680
+      },
+      {
+        "text": "Handlarz zna cenę sekretów, a Rycerz ukrywa się za przysięgą.",
+        "startMs": 5776,
+        "endMs": 11840
+      },
+      {
+        "text": "Słuchaj uważnie, bo słowo, które otworzy jedne drzwi, może zamknąć następne.",
+        "startMs": 12630,
+        "endMs": 18480
+      }
+    ]
+  },
+  "intro-04": {
+    "audio": "/audio/narrator/intro/04-truth-from-their-lips.mp3",
+    "text": "Nie wystarczy, że sam poznasz odpowiedź. Prawda odzyska głos dopiero wtedy, gdy rozmówca zdecyduje się wypowiedzieć ją własnymi słowami. Nie wybierasz gotowych kwestii. Każdą rozmowę budujesz sam.",
+    "durationMs": 14800,
+    "cues": [
+      {
+        "text": "Nie wystarczy, że sam poznasz odpowiedź.",
+        "startMs": 200,
+        "endMs": 2760
+      },
+      {
+        "text": "Prawda odzyska głos dopiero wtedy, gdy rozmówca zdecyduje się wypowiedzieć ją własnymi słowami.",
+        "startMs": 2980,
+        "endMs": 9680
+      },
+      {
+        "text": "Nie wybierasz gotowych kwestii.",
+        "startMs": 9900,
+        "endMs": 12520
+      },
+      {
+        "text": "Każdą rozmowę budujesz sam.",
+        "startMs": 12667,
+        "endMs": 14800
+      }
+    ]
+  },
+  "intro-05": {
+    "audio": "/audio/narrator/intro/05-chronicle-road.mp3",
+    "text": "Każde oddane Milczenie zapisze nowy fragment historii i wskaże następny krok. Pierwsza czeka Mila. Posłuchaj uważnie. Czasem najważniejsza prawda zaczyna się od wspomnienia, którego ktoś boi się nazwać.",
+    "durationMs": 18240,
+    "cues": [
+      {
+        "text": "Każde oddane Milczenie zapisze nowy fragment historii i wskaże następny krok.",
+        "startMs": 208,
+        "endMs": 5920
+      },
+      {
+        "text": "Pierwsza czeka Mila.",
+        "startMs": 6048,
+        "endMs": 8240
+      },
+      {
+        "text": "Posłuchaj uważnie.",
+        "startMs": 8920,
+        "endMs": 10680
+      },
+      {
+        "text": "Czasem najważniejsza prawda zaczyna się od wspomnienia, którego ktoś boi się nazwać.",
+        "startMs": 10900,
+        "endMs": 18240
+      }
+    ]
+  },
+  "ending-01": {
+    "audio": "/audio/narrator/ending/01-seven-voices.mp3",
+    "text": "Każde milczenie miało powód. Każdy sekret — ranę. Nie pokonałeś ich. Każde z nich zdecydowało się oddać fragment prawdy, którego nie mogło dłużej nieść samotnie.",
+    "durationMs": 12969,
+    "cues": [
+      {
+        "text": "Każde milczenie miało powód.",
+        "startMs": 240,
+        "endMs": 2440
+      },
+      {
+        "text": "Każdy sekret — ranę.",
+        "startMs": 2587,
+        "endMs": 5440
+      },
+      {
+        "text": "Nie pokonałeś ich.",
+        "startMs": 6189,
+        "endMs": 7689
+      },
+      {
+        "text": "Każde z nich zdecydowało się oddać fragment prawdy, którego nie mogło dłużej nieść samotnie.",
+        "startMs": 7822,
+        "endMs": 12969
+      }
+    ]
+  },
+  "ending-02": {
+    "audio": "/audio/narrator/ending/02-first-word.mp3",
+    "text": "Bóg nie zagrzmiał. Wyszeptał prawdę tak cicho, jakby bał się, że świat znów jej nadużyje. Milczenie nie było karą. Było schronieniem — aż ktoś przyszedł słuchać, zamiast żądać.",
+    "durationMs": 15200,
+    "cues": [
+      {
+        "text": "Bóg nie zagrzmiał.",
+        "startMs": 220,
+        "endMs": 2320
+      },
+      {
+        "text": "Wyszeptał prawdę tak cicho, jakby bał się, że świat znów jej nadużyje.",
+        "startMs": 2360,
+        "endMs": 7240
+      },
+      {
+        "text": "Milczenie nie było karą.",
+        "startMs": 8180,
+        "endMs": 10000
+      },
+      {
+        "text": "Było schronieniem — aż ktoś przyszedł słuchać, zamiast żądać.",
+        "startMs": 10160,
+        "endMs": 15200
+      }
+    ]
+  },
+  "ending-03": {
+    "audio": "/audio/narrator/ending/03-name.mp3",
+    "text": "Na ostatniej stronie Kroniki pojawiło się imię. Nie jako wyrok, lecz jako wybór. Twoja strona była pusta, dopóki nie zacząłeś nieść cudzych prawd. Teraz możesz zapisać na niej własną.",
+    "durationMs": 14160,
+    "cues": [
+      {
+        "text": "Na ostatniej stronie Kroniki pojawiło się imię.",
+        "startMs": 147,
+        "endMs": 3320
+      },
+      {
+        "text": "Nie jako wyrok, lecz jako wybór.",
+        "startMs": 3430,
+        "endMs": 7360
+      },
+      {
+        "text": "Twoja strona była pusta, dopóki nie zacząłeś nieść cudzych prawd.",
+        "startMs": 8065,
+        "endMs": 11360
+      },
+      {
+        "text": "Teraz możesz zapisać na niej własną.",
+        "startMs": 11580,
+        "endMs": 14160
+      }
+    ]
+  },
+  "ending-04": {
+    "audio": "/audio/narrator/ending/04-breath.mp3",
+    "text": "Prawda nie uleczyła wszystkiego. Królewski rozkaz nie przestał być winą, a dawne rany nie zniknęły. Lecz odtąd nikt nie musiał milczeć za cały świat. Każde miejsce mogło znów przemówić własnym głosem.",
+    "durationMs": 13040,
+    "cues": [
+      {
+        "text": "Prawda nie uleczyła wszystkiego.",
+        "startMs": 140,
+        "endMs": 1840
+      },
+      {
+        "text": "Królewski rozkaz nie przestał być winą, a dawne rany nie zniknęły.",
+        "startMs": 2080,
+        "endMs": 6640
+      },
+      {
+        "text": "Lecz odtąd nikt nie musiał milczeć za cały świat.",
+        "startMs": 6920,
+        "endMs": 9760
+      },
+      {
+        "text": "Każde miejsce mogło znów przemówić własnym głosem.",
+        "startMs": 9867,
+        "endMs": 13040
+      }
+    ]
+  },
+  "ending-05": {
+    "audio": "/audio/narrator/ending/05-road.mp3",
+    "text": "Nie potrzebowałeś miecza. Potrzebowałeś odwagi, by słuchać — i odpowiedzialności za słowa, które niosłeś dalej. Opowieść została domknięta. Milczenie oddane. Droga pozostaje.",
+    "durationMs": 15840,
+    "cues": [
+      {
+        "text": "Nie potrzebowałeś miecza.",
+        "startMs": 136,
+        "endMs": 1680
+      },
+      {
+        "text": "Potrzebowałeś odwagi, by słuchać — i odpowiedzialności za słowa, które niosłeś dalej.",
+        "startMs": 1920,
+        "endMs": 8320
+      },
+      {
+        "text": "Opowieść została domknięta.",
+        "startMs": 8853,
+        "endMs": 12080
+      },
+      {
+        "text": "Milczenie oddane.",
+        "startMs": 12200,
+        "endMs": 14160
+      },
+      {
+        "text": "Droga pozostaje.",
+        "startMs": 14850,
+        "endMs": 15840
+      }
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 6500;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(60, 40, 28, 0.35), rgba(8, 5, 3, 0.88) 58%),
+    rgba(6, 4, 3, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.modal {
+  position: relative;
+  width: min(520px, calc(100vw - 32px));
+  overflow: hidden;
+  padding: 30px 28px 24px;
+  border: 2px solid #6b4a32;
+  border-radius: 20px 20px 16px 16px;
+  background:
+    linear-gradient(180deg, rgba(210, 186, 148, 0.98), rgba(158, 124, 86, 0.98)),
+    url("/map/pergamin.jpg") center / cover;
+  color: #3a2414;
+  box-shadow:
+    inset 0 0 0 4px rgba(62, 38, 20, 0.14),
+    inset 0 1px 0 rgba(255, 245, 220, 0.45),
+    0 0 0 1px rgba(90, 58, 32, 0.35),
+    0 32px 80px rgba(8, 5, 3, 0.78);
+}
+
+.modal::before,
+.modal::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(74, 46, 24, 0.45), transparent);
+  pointer-events: none;
+}
+
+.modal::before {
+  top: 11px;
+}
+
+.modal::after {
+  bottom: 11px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(74, 46, 24, 0.34);
+  border-radius: 999px;
+  background: rgba(225, 202, 166, 0.62);
+  color: #3a2414;
+  cursor: pointer;
+  font-family: var(--font-heading), serif;
+  font-size: 1.45rem;
+  line-height: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 245, 220, 0.38), 0 4px 12px rgba(20, 12, 6, 0.22);
+}
+
+.closeButton:hover {
+  background: rgba(238, 213, 174, 0.84);
+}
+
+.closeButton:focus-visible {
+  outline: 3px solid rgba(110, 74, 44, 0.32);
+  outline-offset: 3px;
+}
+
+.shadowVeil {
+  position: absolute;
+  inset: -20%;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 40%, rgba(30, 18, 10, 0.18) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.seal {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  border: 2px solid rgba(96, 62, 38, 0.85);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(180, 150, 120, 0.35), transparent 40%),
+    linear-gradient(180deg, rgba(88, 54, 30, 0.92), rgba(48, 28, 16, 0.95));
+  color: #d4b896;
+  box-shadow:
+    inset 0 1px 0 rgba(200, 170, 140, 0.25),
+    0 8px 22px rgba(20, 12, 6, 0.55);
+}
+
+.seal svg {
+  width: 34px;
+  height: 34px;
+}
+
+.heading {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6b4a32;
+}
+
+.title {
+  margin: 4px 0 0;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #2f1c10;
+}
+
+.characterName {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #5c3d24;
+}
+
+.quote {
+  margin: 18px auto 0;
+  max-width: 34ch;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-heading), serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+  color: #3f2817;
+}
+
+.hint {
+  margin: 14px auto 0;
+  max-width: 38ch;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  text-align: center;
+  color: #6b4a32;
+}
+
+.coaching {
+  margin: 14px auto 0;
+  max-width: 40ch;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(92, 61, 36, 0.08);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  text-align: left;
+  color: #5c3d24;
+}
+
+.coaching p + p {
+  margin-top: 8px;
+}
+
+.statsSection {
+  margin-top: 18px;
+}
+
+.statsSectionLabel {
+  margin: 0 0 8px;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6b4a32;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.statCard {
+  padding: 12px 10px;
+  border: 1px solid rgba(88, 56, 32, 0.28);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(230, 210, 178, 0.65), rgba(180, 145, 105, 0.5)),
+    url("/map/pergamin.jpg") center / cover;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(255, 245, 220, 0.4);
+}
+
+.statCard span {
+  display: block;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b4a32;
+}
+
+.statCard strong {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--font-heading), serif;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #2f1c10;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.actions > * {
+  flex: 1;
+}
+
+@media (max-width: 520px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shadowVeil {
+    animation: none;
+  }
+}

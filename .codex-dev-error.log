@@ -1,0 +1,647 @@
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ziark\bun.lock as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ziark\Projekty\ConvinceMe\package-lock.json
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[browser] [voice] TTS chunk failed: Error: TTS request failed (502)
+    at useCharacterVoice.useCallback[speakCharacter].requestChunk.request (hooks/use-character-voice.ts:81:35)
+    at async useCharacterVoice.useCallback[speakCharacter] (hooks/use-character-voice.ts:111:22)
+  79 |
+  80 |           if (response.status === 503) return null;
+> 81 |           if (!response.ok) throw new Error(`TTS request failed (${response.status})`);
+     |                                   ^
+  82 |
+  83 |           const blob = await response.blob();
+  84 |           return URL.createObjectURL(blob); (hooks/use-character-voice.ts:87:21)
+[browser] [voice] TTS chunk failed: Error: TTS request failed (502)
+    at useCharacterVoice.useCallback[speakCharacter].requestChunk.request (hooks/use-character-voice.ts:81:35)
+    at async useCharacterVoice.useCallback[speakCharacter] (hooks/use-character-voice.ts:103:23)
+  79 |
+  80 |           if (response.status === 503) return null;
+> 81 |           if (!response.ok) throw new Error(`TTS request failed (${response.status})`);
+     |                                   ^
+  82 |
+  83 |           const blob = await response.blob();
+  84 |           return URL.createObjectURL(blob); (hooks/use-character-voice.ts:87:21)
+Persisting failed: Unable to write SST file 00001481.sst
+
+Caused by:
+    System nie może odnaleźć określonej ścieżki. (os error 3)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ziark\\Projekty\\ConvinceMe\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+[browser] Uncaught Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\pages\_document.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\require.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\load-components.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\build\utils.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ziark\Projekty\ConvinceMe\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (.next\dev\server\pages\_document.js:1:7)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\ziark\Projekty\ConvinceMe\.next\dev\server\app\_not-found\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\ziark\\Projekty\\ConvinceMe\\.next\\dev\\server\\app\\_not-found\\page\\build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
